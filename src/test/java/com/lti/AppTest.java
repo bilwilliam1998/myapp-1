@@ -4,6 +4,8 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
+import junit.framework.AssertionFailedError;
+
 /**
  * Unit test for simple App.
  */
@@ -15,6 +17,11 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue( true );
-    }
+    	try{
+        assertTrue(true);
+    	}catch (Exception e) {
+			throw new AssertionError();
+		}
+
+    	}
 }
