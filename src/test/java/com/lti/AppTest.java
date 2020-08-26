@@ -20,7 +20,7 @@ public class AppTest
     	try{
         assertTrue(true);
     	}catch (Exception e) {
-			throw new AssertionError();
+			System.out.println(e);
 		}
 
     	}
